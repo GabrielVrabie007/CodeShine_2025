@@ -1,11 +1,11 @@
 openapi: 3.0.0
 info:
   title: Expense Classifier API
-  description: API for translating and classifying expenses using Google Generative AI.
+  description: API for translating and classifying expenses using Google Generative AI and speech-to-text using ElevenLabs.
   version: 1.0.0
 
 servers:
-  - url: http://localhost:5000
+  - url: http://localhost:5050
 
 paths:
   /:
@@ -59,9 +59,11 @@ paths:
                   translated_text:
                     type: string
                     example: "Today I spent 500 lei on lollipops"
-                  predicted_category:
-                    type: string
-                    example: groceries
+                  classified_items:
+                    type: array
+                    items:
+                      type: string
+                    example: ["groceries"]
                   status:
                     type: string
                     example: success
@@ -69,3 +71,55 @@ paths:
           description: Bad request (missing text or categories)
         '500':
           description: Internal server error (translation or classification failed)
+
+  /speech-to-text:
+    post:
+      summary: Convert speech to text and classify expense
+      description: >
+        Converts audio file to text using ElevenLabs Scribe, translates if needed,
+        and classifies the expense into provided categories.
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                audio:
+                  type: string
+                  format: binary
+                  description: Audio file (MP3, WAV, etc.)
+                categories:
+                  type: array
+                  items:
+                    type: string
+                  description: Optional expense categories (defaults to ["going out", "house expense", "groceries"])
+                  example: ["going out", "house expense", "groceries"]
+      responses:
+        '200':
+          description: Successful speech-to-text and classification
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  original_text:
+                    type: string
+                    example: "Today I spent 500 lei on lollipops"
+                  translated_text:
+                    type: string
+                    example: "Today I spent 500 lei on lollipops"
+                  classified_items:
+                    type: array
+                    items:
+                      type: string
+                    example: ["groceries"]
+                  status:
+                    type: string
+                    example: success
+        '400':
+          description: Bad request (no audio file provided)
+        '500':
+          description: Internal server error (speech processing, translation, or classification failed)
+
+  

@@ -1,27 +1,27 @@
 2025-09-20 17:24:47.334 | INFO     | __main__:<module>:10 - GEMINI_API_KEY found: True
 2025-09-20 17:24:47.336 | INFO     | __main__:<module>:11 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
-2025-09-20 17:24:47.337 | INFO     | __main__:<module>:147 - Starting Flask server on port 5000
+2025-09-20 17:24:47.337 | INFO     | __main__:<module>:147 - Starting Flask server on port 5050
 2025-09-20 17:29:28.391 | INFO     | __main__:<module>:10 - GEMINI_API_KEY found: True
 2025-09-20 17:29:28.391 | INFO     | __main__:<module>:11 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
-2025-09-20 17:29:28.391 | INFO     | __main__:<module>:147 - Starting Flask server on port 5000
+2025-09-20 17:29:28.391 | INFO     | __main__:<module>:147 - Starting Flask server on port 5050
 2025-09-20 17:31:40.389 | INFO     | __main__:<module>:10 - GEMINI_API_KEY found: True
 2025-09-20 17:31:40.389 | INFO     | __main__:<module>:11 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
-2025-09-20 17:31:40.403 | INFO     | __main__:<module>:158 - Starting Flask server on port 5000
+2025-09-20 17:31:40.403 | INFO     | __main__:<module>:158 - Starting Flask server on port 5050
 2025-09-20 17:31:47.669 | INFO     | __main__:<module>:10 - GEMINI_API_KEY found: True
 2025-09-20 17:31:47.669 | INFO     | __main__:<module>:11 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
-2025-09-20 17:31:47.669 | INFO     | __main__:<module>:149 - Starting Flask server on port 5000
+2025-09-20 17:31:47.669 | INFO     | __main__:<module>:149 - Starting Flask server on port 5050
 2025-09-20 17:31:50.774 | INFO     | __main__:<module>:10 - GEMINI_API_KEY found: True
 2025-09-20 17:31:50.775 | INFO     | __main__:<module>:11 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
-2025-09-20 17:31:50.776 | INFO     | __main__:<module>:148 - Starting Flask server on port 5000
+2025-09-20 17:31:50.776 | INFO     | __main__:<module>:148 - Starting Flask server on port 5050
 2025-09-20 17:31:54.827 | INFO     | __main__:<module>:13 - GEMINI_API_KEY found: True
 2025-09-20 17:31:54.827 | INFO     | __main__:<module>:14 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
-2025-09-20 17:31:54.827 | INFO     | __main__:<module>:151 - Starting Flask server on port 5000
+2025-09-20 17:31:54.827 | INFO     | __main__:<module>:151 - Starting Flask server on port 5050
 2025-09-20 17:32:15.668 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: False
 2025-09-20 17:32:15.668 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: None
-2025-09-20 17:32:15.668 | INFO     | __main__:<module>:161 - Starting Flask server on port 5000
+2025-09-20 17:32:15.668 | INFO     | __main__:<module>:161 - Starting Flask server on port 5050
 2025-09-20 17:32:16.425 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
 2025-09-20 17:32:16.426 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
-2025-09-20 17:32:16.427 | INFO     | __main__:<module>:161 - Starting Flask server on port 5000
+2025-09-20 17:32:16.427 | INFO     | __main__:<module>:161 - Starting Flask server on port 5050
 2025-09-20 17:32:51.145 | DEBUG    | __main__:classify:104 - Incoming request data: {'text': 'Way brat azi am cheltuit 500 di lei pi ciupaciupsuri', 'categories': ['going out', 'house expense', 'groceries']}
 2025-09-20 17:32:51.145 | DEBUG    | __main__:translate_text:53 - Initializing translation model...
 2025-09-20 17:32:51.764 | ERROR    | __main__:translate_text:59 - Error in translate_text
@@ -41,7 +41,7 @@ Traceback (most recent call last):
     self._target(*self._args, **self._kwargs)
     │    │        │    │        │    └ {}
     │    │        │    │        └ <Thread(Thread-10 (process_request_thread), started daemon 16088)>
-    │    │        │    └ (<socket.socket fd=1152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5000), raddr...
+    │    │        │    └ (<socket.socket fd=1152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5050), raddr...
     │    │        └ <Thread(Thread-10 (process_request_thread), started daemon 16088)>
     │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>>
     └ <Thread(Thread-10 (process_request_thread), started daemon 16088)>
@@ -49,7 +49,7 @@ Traceback (most recent call last):
   File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 683, in process_request_thread
     self.finish_request(request, client_address)
     │    │              │        └ ('127.0.0.1', 61693)
-    │    │              └ <socket.socket fd=1152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5000), raddr=...
+    │    │              └ <socket.socket fd=1152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5050), raddr=...
     │    └ <function BaseServer.finish_request at 0x00000184FC402830>
     └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>
 
@@ -57,7 +57,7 @@ Traceback (most recent call last):
     self.RequestHandlerClass(request, client_address, self)
     │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>
     │    │                   │        └ ('127.0.0.1', 61693)
-    │    │                   └ <socket.socket fd=1152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5000), raddr=...
+    │    │                   └ <socket.socket fd=1152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5050), raddr=...
     │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
     └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>
 
@@ -213,7 +213,7 @@ Traceback (most recent call last):
     self._target(*self._args, **self._kwargs)
     │    │        │    │        │    └ {}
     │    │        │    │        └ <Thread(Thread-14 (process_request_thread), started daemon 5880)>
-    │    │        │    └ (<socket.socket fd=1340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5000), raddr...
+    │    │        │    └ (<socket.socket fd=1340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5050), raddr...
     │    │        └ <Thread(Thread-14 (process_request_thread), started daemon 5880)>
     │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>>
     └ <Thread(Thread-14 (process_request_thread), started daemon 5880)>
@@ -221,7 +221,7 @@ Traceback (most recent call last):
   File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 683, in process_request_thread
     self.finish_request(request, client_address)
     │    │              │        └ ('127.0.0.1', 57688)
-    │    │              └ <socket.socket fd=1340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5000), raddr=...
+    │    │              └ <socket.socket fd=1340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5050), raddr=...
     │    └ <function BaseServer.finish_request at 0x00000184FC402830>
     └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>
 
@@ -229,7 +229,7 @@ Traceback (most recent call last):
     self.RequestHandlerClass(request, client_address, self)
     │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>
     │    │                   │        └ ('127.0.0.1', 57688)
-    │    │                   └ <socket.socket fd=1340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5000), raddr=...
+    │    │                   └ <socket.socket fd=1340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5050), raddr=...
     │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
     └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>
 
@@ -365,3 +365,478 @@ Traceback (most recent call last):
 
 google.api_core.exceptions.FailedPrecondition: 400 User location is not supported for the API use.
 2025-09-20 17:34:26.204 | ERROR    | __main__:classify:116 - Translation failed: 400 User location is not supported for the API use.
+2025-09-20 18:13:31.900 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: False
+2025-09-20 18:13:31.901 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: None
+2025-09-20 18:13:31.903 | INFO     | __main__:<module>:161 - Starting Flask server on port 5050
+2025-09-20 18:13:32.409 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
+2025-09-20 18:13:32.410 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 18:13:32.412 | INFO     | __main__:<module>:161 - Starting Flask server on port 5050
+2025-09-20 18:13:55.862 | DEBUG    | __main__:home:136 - Health check called
+2025-09-20 18:13:57.682 | DEBUG    | __main__:home:136 - Health check called
+2025-09-20 18:14:45.406 | DEBUG    | __main__:home:136 - Health check called
+2025-09-20 18:15:02.265 | DEBUG    | __main__:classify:104 - Incoming request data: {'text': 'Way brat azi am cheltuit 500 di lei pi ciupaciupsuri', 'categories': ['going out', 'house expense', 'groceries']}
+2025-09-20 18:15:02.265 | DEBUG    | __main__:translate_text:53 - Initializing translation model...
+2025-09-20 18:15:09.312 | INFO     | __main__:translate_text:56 - Translation response received: - Translation: Today I spent 500 lei on lollipops.
+- Expense type: Food...
+2025-09-20 18:15:09.313 | DEBUG    | __main__:classify_expense:82 - Initializing classification model...
+2025-09-20 18:15:11.765 | INFO     | __main__:classify_expense:86 - Classification raw prediction: groceries
+2025-09-20 18:15:11.765 | INFO     | __main__:classify_expense:91 - Matched category: groceries
+2025-09-20 18:15:11.767 | INFO     | __main__:classify:131 - Final result: {'original_text': 'Way brat azi am cheltuit 500 di lei pi ciupaciupsuri', 'translated_text': '- Translation: Today I spent 500 lei on lollipops.\n- Expense type: Food', 'predicted_category': 'groceries', 'status': 'success'}
+2025-09-20 18:15:58.921 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
+2025-09-20 18:15:58.921 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 18:15:58.924 | INFO     | __main__:<module>:161 - Starting Flask server on port 5050
+2025-09-20 18:16:40.054 | DEBUG    | __main__:home:136 - Health check called
+2025-09-20 18:19:02.855 | DEBUG    | __main__:classify:104 - Incoming request data: {'text': 'Way brat azi am cheltuit 500 di lei pi ciupaciupsuri', 'categories': ['going out', 'house expense', 'groceries']}
+2025-09-20 18:19:02.857 | DEBUG    | __main__:translate_text:53 - Initializing translation model...
+2025-09-20 18:19:08.131 | INFO     | __main__:translate_text:56 - Translation response received: - Translation: "Man, today I spent 500 lei on lollipops."
+- Expense type: Food (or Snacks/Confection...
+2025-09-20 18:19:08.132 | DEBUG    | __main__:classify_expense:82 - Initializing classification model...
+2025-09-20 18:19:10.994 | INFO     | __main__:classify_expense:86 - Classification raw prediction: groceries
+2025-09-20 18:19:10.995 | INFO     | __main__:classify_expense:91 - Matched category: groceries
+2025-09-20 18:19:10.995 | INFO     | __main__:classify:131 - Final result: {'original_text': 'Way brat azi am cheltuit 500 di lei pi ciupaciupsuri', 'translated_text': '- Translation: "Man, today I spent 500 lei on lollipops."\n- Expense type: Food (or Snacks/Confectionery)', 'predicted_category': 'groceries', 'status': 'success'}
+2025-09-20 18:27:09.416 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
+2025-09-20 18:27:09.416 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 18:27:09.419 | INFO     | __main__:<module>:161 - Starting Flask server on port 5050
+2025-09-20 18:27:36.343 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
+2025-09-20 18:27:36.343 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 18:27:36.346 | INFO     | __main__:<module>:161 - Starting Flask server on port 5050
+2025-09-20 18:27:57.209 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
+2025-09-20 18:27:57.209 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 18:27:57.212 | INFO     | __main__:<module>:161 - Starting Flask server on port 5050
+2025-09-20 18:30:13.598 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
+2025-09-20 18:30:13.598 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 18:30:13.600 | INFO     | __main__:<module>:90 - Starting Flask server on port 5050
+2025-09-20 18:30:45.624 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
+2025-09-20 18:30:45.624 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 18:30:45.627 | INFO     | __main__:<module>:90 - Starting Flask server on port 5050
+2025-09-20 18:30:50.253 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
+2025-09-20 18:30:50.253 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 18:30:50.256 | INFO     | __main__:<module>:90 - Starting Flask server on port 5050
+2025-09-20 18:30:57.925 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
+2025-09-20 18:30:57.925 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 18:30:57.927 | INFO     | __main__:<module>:90 - Starting Flask server on port 5050
+2025-09-20 18:31:14.761 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
+2025-09-20 18:31:14.762 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 18:31:14.764 | INFO     | __main__:<module>:90 - Starting Flask server on port 5050
+2025-09-20 18:31:17.378 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
+2025-09-20 18:31:17.378 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 18:31:17.381 | INFO     | __main__:<module>:90 - Starting Flask server on port 5050
+2025-09-20 18:31:25.032 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
+2025-09-20 18:31:25.032 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 18:31:25.034 | INFO     | __main__:<module>:90 - Starting Flask server on port 5050
+2025-09-20 18:31:36.791 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
+2025-09-20 18:31:36.791 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 18:31:36.794 | INFO     | __main__:<module>:90 - Starting Flask server on port 5050
+2025-09-20 18:43:13.593 | INFO     | __main__:<module>:95 - Starting Flask server on port 5050
+2025-09-20 18:43:14.070 | INFO     | __main__:<module>:95 - Starting Flask server on port 5050
+2025-09-20 18:43:22.195 | DEBUG    | __main__:home:70 - Health check called
+2025-09-20 18:45:52.638 | DEBUG    | __main__:classify:35 - Incoming request data: {'text': 'Salut! Azi am cheltuit 500 de lei pe ciupaciupsuri, bomboane și sucuri când am ieșit cu prietenii la mall. Am cumpărat și o mică gustare pentru mine și pentru fratele meu. Bugetul meu pentru cheltuieli de divertisment a fost puțin depășit astăzi, dar a meritat pentru distracție și socializare.', 'categories': ['going out', 'house expense', 'groceries']}
+2025-09-20 18:45:52.639 | DEBUG    | translate_and_classify:translate_text:32 - Initializing translation model...
+2025-09-20 18:46:01.963 | INFO     | translate_and_classify:translate_text:35 - Translation response received: - Translation: "Hi! Today I spent 500 lei on lollipops, candies, and juices when I went out with fri...
+2025-09-20 18:46:01.964 | DEBUG    | translate_and_classify:classify_expense:61 - Initializing classification model...
+2025-09-20 18:46:04.280 | INFO     | translate_and_classify:classify_expense:65 - Classification raw prediction: going out
+2025-09-20 18:46:04.281 | INFO     | translate_and_classify:classify_expense:70 - Matched category: going out
+2025-09-20 18:46:04.281 | INFO     | __main__:classify:62 - Final result: {'original_text': 'Salut! Azi am cheltuit 500 de lei pe ciupaciupsuri, bomboane și sucuri când am ieșit cu prietenii la mall. Am cumpărat și o mică gustare pentru mine și pentru fratele meu. Bugetul meu pentru cheltuieli de divertisment a fost puțin depășit astăzi, dar a meritat pentru distracție și socializare.', 'translated_text': '- Translation: "Hi! Today I spent 500 lei on lollipops, candies, and juices when I went out with friends to the mall. I also bought a small snack for myself and my brother. My budget for entertainment expenses was slightly exceeded today, but it was worth it for the fun and socializing."\n- Expense type: "Entertainment & Social"', 'predicted_category': 'going out', 'status': 'success'}
+2025-09-20 18:52:16.701 | DEBUG    | __main__:classify:35 - Incoming request data: {'text': 'Salut! Azi am cheltuit 500 de lei pe ciupaciupsuri, bomboane și sucuri când am ieșit cu prietenii la mall. Am cumpărat și o mică gustare pentru mine și pentru fratele meu care a costat exact 25 lei. Bugetul meu pentru cheltuieli de divertisment a fost puțin depășit astăzi, dar a meritat pentru distracție și socializare.', 'categories': ['going out', 'house expense', 'groceries']}
+2025-09-20 18:52:16.702 | DEBUG    | translate_and_classify:translate_text:32 - Initializing translation model...
+2025-09-20 18:52:21.599 | INFO     | translate_and_classify:translate_text:35 - Translation response received: - Translation: "Hi! Today I spent 500 lei on lollipops, candies, and juices when I went out with fri...
+2025-09-20 18:52:21.599 | DEBUG    | translate_and_classify:classify_expense:61 - Initializing classification model...
+2025-09-20 18:52:24.291 | INFO     | translate_and_classify:classify_expense:65 - Classification raw prediction: going out
+2025-09-20 18:52:24.292 | INFO     | translate_and_classify:classify_expense:70 - Matched category: going out
+2025-09-20 18:52:24.292 | INFO     | __main__:classify:62 - Final result: {'original_text': 'Salut! Azi am cheltuit 500 de lei pe ciupaciupsuri, bomboane și sucuri când am ieșit cu prietenii la mall. Am cumpărat și o mică gustare pentru mine și pentru fratele meu care a costat exact 25 lei. Bugetul meu pentru cheltuieli de divertisment a fost puțin depășit astăzi, dar a meritat pentru distracție și socializare.', 'translated_text': '- Translation: "Hi! Today I spent 500 lei on lollipops, candies, and juices when I went out with friends at the mall. I also bought a small snack for me and my brother which cost exactly 25 lei. My entertainment budget was slightly exceeded today, but it was worth it for the fun and socializing."\n- Expense type: Entertainment', 'predicted_category': 'going out', 'status': 'success'}
+2025-09-20 19:46:59.609 | INFO     | __main__:<module>:95 - Starting Flask server on port 5050
+2025-09-20 19:48:35.046 | INFO     | __main__:<module>:95 - Starting Flask server on port 5050
+2025-09-20 19:48:35.527 | INFO     | __main__:<module>:95 - Starting Flask server on port 5050
+2025-09-20 19:51:05.679 | INFO     | __main__:<module>:95 - Starting Flask server on port 5050
+2025-09-20 19:51:06.157 | INFO     | __main__:<module>:95 - Starting Flask server on port 5050
+2025-09-20 19:52:07.801 | DEBUG    | __main__:home:70 - Health check called
+2025-09-20 19:57:01.394 | INFO     | __main__:<module>:96 - Starting Flask server on port 5050
+2025-09-20 19:57:03.974 | INFO     | __main__:<module>:97 - Starting Flask server on port 5050
+2025-09-20 19:57:19.786 | INFO     | __main__:<module>:99 - Starting Flask server on port 5050
+2025-09-20 19:57:23.407 | INFO     | __main__:<module>:99 - Starting Flask server on port 5050
+2025-09-20 19:57:25.926 | INFO     | __main__:<module>:99 - Starting Flask server on port 5050
+2025-09-20 19:57:58.950 | DEBUG    | __main__:classify:39 - Incoming request data: {'text': 'Salut! Azi am cheltuit 500 de lei pe ciupaciupsuri, bomboane și sucuri când am ieșit cu prietenii la mall. Am cumpărat și o mică gustare pentru mine și pentru fratele meu care a costat exact 25 lei. Bugetul meu pentru cheltuieli de divertisment a fost puțin depășit astăzi, dar a meritat pentru distracție și socializare', 'categories': ['going out', 'house expense', 'groceries']}
+2025-09-20 19:57:58.951 | DEBUG    | translate_and_classify:translate_text:32 - Initializing translation model...
+2025-09-20 19:58:05.218 | INFO     | translate_and_classify:translate_text:35 - Translation response received: - Translation: "Hi! Today I spent 500 lei on lollipops, candies, and soft drinks when I went out wit...
+2025-09-20 19:58:05.219 | DEBUG    | translate_and_classify:classify_expense:70 - Initializing classification and extraction model...
+2025-09-20 19:58:09.258 | INFO     | translate_and_classify:classify_expense:73 - Raw model response: ```json
+[
+  {
+    "category": "going out",
+    "item": "lollipops, candies, and soft drinks",
+    "amount": 500
+  },
+  {
+    "category": "going out",
+    "item": "small snack",
+    "amount": 25
+  }
+]
+```
+2025-09-20 19:58:09.259 | WARNING  | translate_and_classify:classify_expense:80 - Failed to parse model output as JSON, returning empty list
+2025-09-20 20:00:35.573 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:00:37.167 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:00:43.306 | DEBUG    | __main__:classify:39 - Incoming request data: {'text': 'Salut! Azi am cheltuit 500 de lei pe ciupaciupsuri, bomboane și sucuri când am ieșit cu prietenii la mall. Am cumpărat și o mică gustare pentru mine și pentru fratele meu care a costat exact 25 lei. Bugetul meu pentru cheltuieli de divertisment a fost puțin depășit astăzi, dar a meritat pentru distracție și socializare', 'categories': ['going out', 'house expense', 'groceries']}
+2025-09-20 20:00:43.307 | DEBUG    | translate_and_classify:translate_text:32 - Initializing translation model...
+2025-09-20 20:00:47.999 | INFO     | translate_and_classify:translate_text:35 - Translation response received: - Translation: "Hi! Today I spent 500 lei on lollipops, candies, and juices when I went out with fri...
+2025-09-20 20:00:47.999 | DEBUG    | translate_and_classify:classify_expense:70 - Initializing classification and extraction model...
+2025-09-20 20:00:52.422 | INFO     | translate_and_classify:classify_expense:73 - Raw model response: ```json
+[
+  {
+    "category": "going out",
+    "item": "lollipops, candies, and juices",
+    "amount": 500
+  },
+  {
+    "category": "going out",
+    "item": "a small snack",
+    "amount": 25
+  }
+]
+```
+2025-09-20 20:00:52.423 | WARNING  | translate_and_classify:classify_expense:80 - Failed to parse model output as JSON, returning empty list
+2025-09-20 20:00:52.423 | ERROR    | __main__:classify:57 - Classification failed or returned empty list
+2025-09-20 20:02:22.210 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:02:22.689 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:02:47.816 | DEBUG    | __main__:classify:39 - Incoming request data: {'text': 'Salut! Azi am cheltuit 500 de lei pe ciupaciupsuri, bomboane și sucuri când am ieșit cu prietenii la mall. Am cumpărat și o mică gustare pentru mine și pentru fratele meu care a costat exact 25 lei. Bugetul meu pentru cheltuieli de divertisment a fost puțin depășit astăzi, dar a meritat pentru distracție și socializare', 'categories': ['going out', 'house expense', 'groceries']}
+2025-09-20 20:02:47.816 | DEBUG    | translate_and_classify:translate_text:32 - Initializing translation model...
+2025-09-20 20:02:58.742 | INFO     | translate_and_classify:translate_text:35 - Translation response received: - Translation: "Hi! Today I spent 500 lei on lollipops, candies, and juices when I went out with fri...
+2025-09-20 20:02:58.743 | DEBUG    | translate_and_classify:classify_expense:78 - Initializing classification and extraction model...
+2025-09-20 20:03:03.548 | INFO     | translate_and_classify:classify_expense:81 - Raw model response: ```json
+[
+  {
+    "category": "going out",
+    "item": "lollipops, candies, juices",
+    "amount": 500
+  },
+  {
+    "category": "going out",
+    "item": "small snack",
+    "amount": 25
+  }
+]
+```
+2025-09-20 20:03:03.549 | WARNING  | translate_and_classify:classify_expense:88 - Failed to parse model output as JSON, returning empty list
+2025-09-20 20:03:03.549 | ERROR    | __main__:classify:57 - Classification failed or returned empty list
+2025-09-20 20:04:24.946 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:04:28.564 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:04:44.404 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:04:48.019 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:05:18.790 | DEBUG    | __main__:classify:39 - Incoming request data: {'text': 'Salut! Azi am cheltuit 500 de lei pe ciupaciupsuri, bomboane și sucuri când am ieșit cu prietenii la mall. Am cumpărat și o mică gustare pentru mine și pentru fratele meu care a costat exact 25 lei. Bugetul meu pentru cheltuieli de divertisment a fost puțin depășit astăzi, dar a meritat pentru distracție și socializare', 'categories': ['going out', 'house expense', 'groceries']}
+2025-09-20 20:05:18.790 | DEBUG    | translate_and_classify:translate_text:34 - Initializing translation model...
+2025-09-20 20:05:23.934 | INFO     | translate_and_classify:translate_text:37 - Translation response received: - Translation: "Hi! Today I spent 500 lei on lollipops, candies, and juices when I went out with fri...
+2025-09-20 20:05:23.935 | DEBUG    | translate_and_classify:classify_expense:80 - Initializing classification and extraction model...
+2025-09-20 20:05:31.234 | INFO     | translate_and_classify:classify_expense:84 - Raw model response: ```json
+[
+    {
+        "category": "going out",
+        "item": "lollipops, candies, and juices",
+        "amount": 500
+    },
+    {
+        "category": "going out",
+        "item": "small snack",
+        "amount": 25
+    }
+]
+```
+2025-09-20 20:05:31.235 | WARNING  | translate_and_classify:classify_expense:93 - Failed to parse model output as JSON, returning empty list
+2025-09-20 20:05:31.235 | ERROR    | __main__:classify:57 - Classification failed or returned empty list
+2025-09-20 20:06:08.776 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:09:12.833 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:09:13.324 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:09:18.963 | DEBUG    | __main__:classify:39 - Incoming request data: {'text': 'Salut! Azi am cheltuit 500 de lei pe ciupaciupsuri, bomboane și sucuri când am ieșit cu prietenii la mall. Am cumpărat și o mică gustare pentru mine și pentru fratele meu care a costat exact 25 lei. Bugetul meu pentru cheltuieli de divertisment a fost puțin depășit astăzi, dar a meritat pentru distracție și socializare', 'categories': ['going out', 'house expense', 'groceries']}
+2025-09-20 20:09:18.963 | DEBUG    | translate_and_classify:translate_text:32 - Initializing translation model...
+2025-09-20 20:09:26.585 | INFO     | translate_and_classify:translate_text:35 - Translation response received: - Translation: "Hi! Today I spent 500 lei on lollipops, candies, and juices when I went out with fri...
+2025-09-20 20:09:26.586 | DEBUG    | translate_and_classify:classify_expense:79 - Initializing classification and extraction model...
+2025-09-20 20:09:30.378 | INFO     | translate_and_classify:classify_expense:82 - Raw model response: [
+    {
+        "category": "going out",
+        "item": "lollipops, candies, and juices",
+        "amount": 500
+    },
+    {
+        "category": "going out",
+        "item": "small snack",
+        "amount": 25
+    }
+]
+2025-09-20 20:09:30.378 | INFO     | __main__:classify:66 - Final result: {'original_text': 'Salut! Azi am cheltuit 500 de lei pe ciupaciupsuri, bomboane și sucuri când am ieșit cu prietenii la mall. Am cumpărat și o mică gustare pentru mine și pentru fratele meu care a costat exact 25 lei. Bugetul meu pentru cheltuieli de divertisment a fost puțin depășit astăzi, dar a meritat pentru distracție și socializare', 'translated_text': '- Translation: "Hi! Today I spent 500 lei on lollipops, candies, and juices when I went out with friends at the mall. I also bought a small snack for myself and my brother, which cost exactly 25 lei. My entertainment budget was slightly exceeded today, but it was worth it for the fun and socializing."\n- Expense type: Entertainment', 'classified_items': [{'category': 'going out', 'item': 'lollipops, candies, and juices', 'amount': 500}, {'category': 'going out', 'item': 'small snack', 'amount': 25}], 'status': 'success'}
+2025-09-20 20:13:01.982 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:16:29.329 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:16:30.931 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:16:49.782 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:22:34.899 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:22:39.565 | INFO     | __main__:<module>:100 - Starting Flask server on port 5050
+2025-09-20 20:22:41.191 | INFO     | __main__:<module>:144 - Starting Flask server on port 5050
+2025-09-20 20:22:42.849 | INFO     | __main__:<module>:143 - Starting Flask server on port 5050
+2025-09-20 20:22:44.485 | INFO     | __main__:<module>:143 - Starting Flask server on port 5050
+2025-09-20 20:22:47.112 | INFO     | __main__:<module>:102 - Starting Flask server on port 5050
+2025-09-20 20:22:48.720 | INFO     | __main__:<module>:145 - Starting Flask server on port 5050
+2025-09-20 20:23:19.757 | INFO     | __main__:<module>:102 - Starting Flask server on port 5050
+2025-09-20 20:23:21.364 | INFO     | __main__:<module>:143 - Starting Flask server on port 5050
+2025-09-20 20:50:30.253 | ERROR    | __main__:speech_to_text:85 - Error in speech-to-text endpoint
+Traceback (most recent call last):
+
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7e1dbc849d80>
+    └ <Thread(Thread-10 (process_request_thread), started daemon 138666104055488)>
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x7e1dbc849ab0>
+    └ <Thread(Thread-10 (process_request_thread), started daemon 138666104055488)>
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-10 (process_request_thread), started daemon 138666104055488)>
+    │    │        │    └ (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5050), raddr=('...
+    │    │        └ <Thread(Thread-10 (process_request_thread), started daemon 138666104055488)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x7e1db87d13f0>>
+    └ <Thread(Thread-10 (process_request_thread), started daemon 138666104055488)>
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 53046)
+    │    │              └ <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5050), raddr=('1...
+    │    └ <function BaseServer.finish_request at 0x7e1db9294820>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x7e1db87d13f0>
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x7e1db87d13f0>
+    │    │                   │        └ ('127.0.0.1', 53046)
+    │    │                   └ <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5050), raddr=('1...
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x7e1db87d13f0>
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x7e1db91572e0>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x7e1db8640c10>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/http/server.py", line 433, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x7e1db9296710>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x7e1db8640c10>
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/http/server.py", line 421, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x7e1db8640c10>>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <werkzeug.debug.DebuggedApplication object at 0x7e1db8758d60>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x7e1db87d13f0>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x7e1db8640c10>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x7e1db87efbe0>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+                └ <generator object DebuggedApplication.debug_application at 0x7e1db87ae9d0>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+               │    │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x7e1db87efb50>
+               │    │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=8>, 'wsgi.errors': <_io.TextIOWrap...
+               │    └ <Flask 'endpoints'>
+               └ <werkzeug.debug.DebuggedApplication object at 0x7e1db8758d60>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x7e1db87efb50>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=8>, 'wsgi.errors': <_io.TextIOWrap...
+           │    └ <function Flask.wsgi_app at 0x7e1db8e48d30>
+           └ <Flask 'endpoints'>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x7e1db8e48550>
+               └ <Flask 'endpoints'>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x7e1db8e484c0>
+         └ <Flask 'endpoints'>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'speech_to_text'
+           │    │           │    │              └ <Rule '/speech-to-text' (OPTIONS, POST) -> speech_to_text>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x7e1db89ce710>, 'swagger_ui.static': <bound method Blueprint.send_s...
+           │    │           └ <Flask 'endpoints'>
+           │    └ <function Flask.ensure_sync at 0x7e1db8e48700>
+           └ <Flask 'endpoints'>
+
+> File "/home/serveruser/codeshine/CodeShine_2025/endpoints.py", line 44, in speech_to_text
+    transcript_response = elevenlabs_client.speech_to_text.convert(
+                          │                 └ <property object at 0x7e1db8ad3790>
+                          └ <elevenlabs.client.ElevenLabs object at 0x7e1db9ab1540>
+
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/elevenlabs/speech_to_text/client.py", line 141, in convert
+    _response = self._raw_client.convert(
+                │    │           └ <function RawSpeechToTextClient.convert at 0x7e1db861caf0>
+                │    └ <elevenlabs.speech_to_text.raw_client.RawSpeechToTextClient object at 0x7e1db86a0340>
+                └ <elevenlabs.speech_to_text.client.SpeechToTextClient object at 0x7e1db86a3ca0>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/elevenlabs/speech_to_text/raw_client.py", line 179, in convert
+    raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response_json)
+          │                    │         │                         │         │              └ {'detail': {'status': 'invalid_language_code', 'message': "Invalid language code received: 'auto'. Please use None if you wan...
+          │                    │         │                         │         └ Headers({'date': 'Sat, 20 Sep 2025 17:50:29 GMT', 'server': 'uvicorn', 'content-length': '995', 'content-type': 'application/...
+          │                    │         │                         └ <Response [400 Bad Request]>
+          │                    │         └ 400
+          │                    └ <Response [400 Bad Request]>
+          └ <class 'elevenlabs.core.api_error.ApiError'>
+
+elevenlabs.core.api_error.ApiError: headers: {'date': 'Sat, 20 Sep 2025 17:50:29 GMT', 'server': 'uvicorn', 'content-length': '995', 'content-type': 'application/json', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'POST, PATCH, OPTIONS, DELETE, GET, PUT', 'access-control-max-age': '600', 'strict-transport-security': 'max-age=31536000; includeSubDomains', 'x-trace-id': '70955f60c597d4f8e67da321ecead7de', 'x-region': 'us-central1', 'via': '1.1 google, 1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 400, body: {'detail': {'status': 'invalid_language_code', 'message': "Invalid language code received: 'auto'. Please use None if you want us to automatically detect the language or use one of: afr, amh, ara, asm, ast, aze, bak, bas, bel, ben, bhr, bod, bos, bre, bul, cat, ceb, ces, chv, ckb, cnh, cre, cym, dan, dav, deu, div, dyu, ell, eng, epo, est, eus, fao, fas, fil, fin, fra, fry, ful, gla, gle, glg, guj, hat, hau, heb, hin, hrv, hsb, hun, hye, ibo, ina, ind, isl, ita, jav, jpn, kab, kan, kas, kat, kaz, kea, khm, kin, kir, kln, kmr, kor, kur, lao, lat, lav, lij, lin, lit, ltg, ltz, lug, luo, mal, mar, mdf, mhr, mkd, mlg, mlt, mon, mri, mrj, msa, mya, myv, nan, nep, nhi, nld, nor, nso, nya, oci, ori, orm, oss, pan, pol, por, pus, quy, roh, ron, rus, sah, san, sat, sin, skr, slk, slv, smo, sna, snd, som, sot, spa, sqi, srd, srp, sun, swa, swe, tam, tat, tel, tgk, tha, tig, tir, tok, ton, tsn, tuk, tur, twi, uig, ukr, umb, urd, uzb, vie, vot, vro, wol, xho, yid, yor, yue, zgh, zho, zul, zza."}}
+2025-09-20 20:54:27.483 | DEBUG    | translate_and_classify:translate_text:32 - Initializing translation model...
+2025-09-20 20:54:50.803 | INFO     | translate_and_classify:translate_text:35 - Translation response received: - Translation: "—at work, after a reservation. (The repeated phrase 'Don't you want something seriou...
+2025-09-20 20:54:50.804 | DEBUG    | translate_and_classify:classify_expense:79 - Initializing classification and extraction model...
+2025-09-20 20:54:56.958 | INFO     | translate_and_classify:classify_expense:82 - Raw model response: []
+2025-09-20 20:57:55.602 | DEBUG    | translate_and_classify:translate_text:32 - Initializing translation model...
+2025-09-20 20:57:59.810 | INFO     | translate_and_classify:translate_text:35 - Translation response received: - Translation: "Today I spent 500 lei on lollipops."
+- Expense type: Food (Snacks/Confectionery)...
+2025-09-20 20:57:59.811 | DEBUG    | translate_and_classify:classify_expense:79 - Initializing classification and extraction model...
+2025-09-20 20:58:02.182 | INFO     | translate_and_classify:classify_expense:82 - Raw model response: [
+    {
+        "category": "groceries",
+        "item": "lollipops",
+        "amount": 500
+    }
+]
+2025-09-20 21:01:09.774 | DEBUG    | translate_and_classify:translate_text:32 - Initializing translation model...
+2025-09-20 21:01:16.397 | INFO     | translate_and_classify:translate_text:35 - Translation response received: - Translation: Today I spent 500 lei on Chupa Chups.
+- Expense type: Food (Snacks/Confectionery)...
+2025-09-20 21:01:16.399 | INFO     | translate_and_classify:classify_expense:57 - Processing text for classification: '- Translation: Today I spent 500 lei on Chupa Chups.
+- Expense type: Food (Snacks/Confectionery)'
+2025-09-20 21:01:16.400 | DEBUG    | translate_and_classify:classify_expense:91 - Initializing classification and extraction model...
+2025-09-20 21:01:18.430 | INFO     | translate_and_classify:classify_expense:96 - Raw model response: '[
+    {
+        "category": "groceries",
+        "item": "Chupa Chups",
+        "amount": 500
+    }
+]'
+2025-09-20 21:01:18.431 | INFO     | translate_and_classify:classify_expense:108 - Parsed JSON successfully: [{'category': 'groceries', 'item': 'Chupa Chups', 'amount': 500}]
+2025-09-20 21:01:18.431 | INFO     | translate_and_classify:classify_expense:176 - Final cleaned results: [{'category': 'groceries', 'item': 'Chupa Chups', 'amount': 500.0}]
+2025-09-20 21:01:35.498 | ERROR    | __main__:speech_to_text:113 - Error in speech-to-text endpoint
+Traceback (most recent call last):
+
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7f2f66f61cf0>
+    └ <Thread(Thread-14 (process_request_thread), started daemon 139841472808640)>
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x7f2f66f61a20>
+    └ <Thread(Thread-14 (process_request_thread), started daemon 139841472808640)>
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-14 (process_request_thread), started daemon 139841472808640)>
+    │    │        │    └ (<socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5050), raddr=('...
+    │    │        └ <Thread(Thread-14 (process_request_thread), started daemon 139841472808640)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x7f2f62edc610>>
+    └ <Thread(Thread-14 (process_request_thread), started daemon 139841472808640)>
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 42890)
+    │    │              └ <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5050), raddr=('1...
+    │    └ <function BaseServer.finish_request at 0x7f2f63988790>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x7f2f62edc610>
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x7f2f62edc610>
+    │    │                   │        └ ('127.0.0.1', 42890)
+    │    │                   └ <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5050), raddr=('1...
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x7f2f62edc610>
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x7f2f63847250>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x7f2f6251bc40>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/http/server.py", line 433, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x7f2f6398a680>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x7f2f6251bc40>
+  File "/home/serveruser/anaconda3/envs/rag/lib/python3.10/http/server.py", line 421, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x7f2f6251bc40>>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <werkzeug.debug.DebuggedApplication object at 0x7f2f62e13820>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x7f2f62edc610>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x7f2f6251bc40>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x7f2f62ee39a0>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+                └ <generator object DebuggedApplication.debug_application at 0x7f2f62ea1ee0>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+               │    │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x7f2f62ee3910>
+               │    │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=8>, 'wsgi.errors': <_io.TextIOWrap...
+               │    └ <Flask 'endpoints'>
+               └ <werkzeug.debug.DebuggedApplication object at 0x7f2f62e13820>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x7f2f62ee3910>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=8>, 'wsgi.errors': <_io.TextIOWrap...
+           │    └ <function Flask.wsgi_app at 0x7f2f63534ca0>
+           └ <Flask 'endpoints'>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x7f2f635344c0>
+               └ <Flask 'endpoints'>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x7f2f63534430>
+         └ <Flask 'endpoints'>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'speech_to_text'
+           │    │           │    │              └ <Rule '/speech-to-text' (POST, OPTIONS) -> speech_to_text>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x7f2f630c6680>, 'swagger_ui.static': <bound method Blueprint.send_s...
+           │    │           └ <Flask 'endpoints'>
+           │    └ <function Flask.ensure_sync at 0x7f2f63534670>
+           └ <Flask 'endpoints'>
+
+> File "/home/serveruser/codeshine/CodeShine_2025/endpoints.py", line 44, in speech_to_text
+    transcript_response = elevenlabs_client.speech_to_text.convert(
+                          │                 └ <property object at 0x7f2f631c7ab0>
+                          └ <elevenlabs.client.ElevenLabs object at 0x7f2f63b9bbb0>
+
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/elevenlabs/speech_to_text/client.py", line 141, in convert
+    _response = self._raw_client.convert(
+                │    │           └ <function RawSpeechToTextClient.convert at 0x7f2f6259e5f0>
+                │    └ <elevenlabs.speech_to_text.raw_client.RawSpeechToTextClient object at 0x7f2f625a4eb0>
+                └ <elevenlabs.speech_to_text.client.SpeechToTextClient object at 0x7f2f625a4ca0>
+  File "/home/serveruser/codeshine/CodeShine_2025/.venv/lib/python3.10/site-packages/elevenlabs/speech_to_text/raw_client.py", line 179, in convert
+    raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response_json)
+          │                    │         │                         │         │              └ {'detail': {'status': 'invalid_language_code', 'message': "Invalid language code received: ''. Please use None if you want us...
+          │                    │         │                         │         └ Headers({'date': 'Sat, 20 Sep 2025 18:01:34 GMT', 'server': 'uvicorn', 'content-length': '991', 'content-type': 'application/...
+          │                    │         │                         └ <Response [400 Bad Request]>
+          │                    │         └ 400
+          │                    └ <Response [400 Bad Request]>
+          └ <class 'elevenlabs.core.api_error.ApiError'>
+
+elevenlabs.core.api_error.ApiError: headers: {'date': 'Sat, 20 Sep 2025 18:01:34 GMT', 'server': 'uvicorn', 'content-length': '991', 'content-type': 'application/json', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'POST, PATCH, OPTIONS, DELETE, GET, PUT', 'access-control-max-age': '600', 'strict-transport-security': 'max-age=31536000; includeSubDomains', 'x-trace-id': '0af15a4a35abf1ce9c5987bc9358dc51', 'x-region': 'us-central1', 'via': '1.1 google, 1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 400, body: {'detail': {'status': 'invalid_language_code', 'message': "Invalid language code received: ''. Please use None if you want us to automatically detect the language or use one of: afr, amh, ara, asm, ast, aze, bak, bas, bel, ben, bhr, bod, bos, bre, bul, cat, ceb, ces, chv, ckb, cnh, cre, cym, dan, dav, deu, div, dyu, ell, eng, epo, est, eus, fao, fas, fil, fin, fra, fry, ful, gla, gle, glg, guj, hat, hau, heb, hin, hrv, hsb, hun, hye, ibo, ina, ind, isl, ita, jav, jpn, kab, kan, kas, kat, kaz, kea, khm, kin, kir, kln, kmr, kor, kur, lao, lat, lav, lij, lin, lit, ltg, ltz, lug, luo, mal, mar, mdf, mhr, mkd, mlg, mlt, mon, mri, mrj, msa, mya, myv, nan, nep, nhi, nld, nor, nso, nya, oci, ori, orm, oss, pan, pol, por, pus, quy, roh, ron, rus, sah, san, sat, sin, skr, slk, slv, smo, sna, snd, som, sot, spa, sqi, srd, srp, sun, swa, swe, tam, tat, tel, tgk, tha, tig, tir, tok, ton, tsn, tuk, tur, twi, uig, ukr, umb, urd, uzb, vie, vot, vro, wol, xho, yid, yor, yue, zgh, zho, zul, zza."}}
+2025-09-20 21:04:49.407 | INFO     | __main__:speech_to_text:49 - Processing audio file: audio_chunk_20250920_145217_0001.wav
+2025-09-20 21:04:49.407 | INFO     | __main__:speech_to_text:50 - File size: 0
+2025-09-20 21:04:49.408 | INFO     | __main__:speech_to_text:51 - Content type: audio/wav
+2025-09-20 21:04:49.408 | INFO     | __main__:speech_to_text:55 - Attempting ElevenLabs SDK transcription...
+2025-09-20 21:04:49.766 | ERROR    | __main__:speech_to_text:80 - ElevenLabs SDK failed: headers: {'date': 'Sat, 20 Sep 2025 18:04:49 GMT', 'server': 'uvicorn', 'content-length': '991', 'content-type': 'application/json', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'POST, PATCH, OPTIONS, DELETE, GET, PUT', 'access-control-max-age': '600', 'strict-transport-security': 'max-age=31536000; includeSubDomains', 'x-trace-id': '889a80917bfac5390cf08a4261220234', 'x-region': 'us-central1', 'via': '1.1 google, 1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 400, body: {'detail': {'status': 'invalid_language_code', 'message': "Invalid language code received: ''. Please use None if you want us to automatically detect the language or use one of: afr, amh, ara, asm, ast, aze, bak, bas, bel, ben, bhr, bod, bos, bre, bul, cat, ceb, ces, chv, ckb, cnh, cre, cym, dan, dav, deu, div, dyu, ell, eng, epo, est, eus, fao, fas, fil, fin, fra, fry, ful, gla, gle, glg, guj, hat, hau, heb, hin, hrv, hsb, hun, hye, ibo, ina, ind, isl, ita, jav, jpn, kab, kan, kas, kat, kaz, kea, khm, kin, kir, kln, kmr, kor, kur, lao, lat, lav, lij, lin, lit, ltg, ltz, lug, luo, mal, mar, mdf, mhr, mkd, mlg, mlt, mon, mri, mrj, msa, mya, myv, nan, nep, nhi, nld, nor, nso, nya, oci, ori, orm, oss, pan, pol, por, pus, quy, roh, ron, rus, sah, san, sat, sin, skr, slk, slv, smo, sna, snd, som, sot, spa, sqi, srd, srp, sun, swa, swe, tam, tat, tel, tgk, tha, tig, tir, tok, ton, tsn, tuk, tur, twi, uig, ukr, umb, urd, uzb, vie, vot, vro, wol, xho, yid, yor, yue, zgh, zho, zul, zza."}}
+2025-09-20 21:04:49.766 | INFO     | __main__:speech_to_text:84 - Attempting direct API call to ElevenLabs...
+2025-09-20 21:04:50.977 | INFO     | __main__:speech_to_text:110 - API transcription successful: '--la servici, după o rezervare. Nu vrei ceva serios? Nu vrei ceva serios? Nu vrei ceva serios?'
+2025-09-20 21:04:50.978 | INFO     | __main__:speech_to_text:138 - Final transcript: '--la servici, după o rezervare. Nu vrei ceva serios? Nu vrei ceva serios? Nu vrei ceva serios?' (length: 94)
+2025-09-20 21:04:50.978 | INFO     | __main__:speech_to_text:141 - Starting translation...
+2025-09-20 21:04:50.978 | DEBUG    | translate_and_classify:translate_text:32 - Initializing translation model...
+2025-09-20 21:04:56.252 | INFO     | translate_and_classify:translate_text:35 - Translation response received: - Translation: "--at work, after a reservation. Don't you want something serious? Don't you want som...
+2025-09-20 21:04:56.253 | INFO     | __main__:speech_to_text:143 - Translation result: {'translated_text': '- Translation: "--at work, after a reservation. Don\'t you want something serious? Don\'t you want something serious? Don\'t you want something serious?"\n- Expense type: Business Meals', 'status': 'success'}
+2025-09-20 21:04:56.254 | INFO     | __main__:speech_to_text:157 - Classifying text: '- Translation: "--at work, after a reservation. Don't you want something serious? Don't you want something serious? Don't you want something serious?"
+- Expense type: Business Meals'
+2025-09-20 21:04:56.254 | INFO     | translate_and_classify:classify_expense:57 - Processing text for classification: '- Translation: "--at work, after a reservation. Don't you want something serious? Don't you want something serious? Don't you want something serious?"
+- Expense type: Business Meals'
+2025-09-20 21:04:56.254 | DEBUG    | translate_and_classify:classify_expense:91 - Initializing classification and extraction model...
+2025-09-20 21:05:00.392 | INFO     | translate_and_classify:classify_expense:96 - Raw model response: '[
+    {
+        "category": "going out",
+        "item": "Business Meals",
+        "amount": 0
+    }
+]'
+2025-09-20 21:05:00.393 | INFO     | translate_and_classify:classify_expense:108 - Parsed JSON successfully: [{'category': 'going out', 'item': 'Business Meals', 'amount': 0}]
+2025-09-20 21:05:00.393 | INFO     | translate_and_classify:classify_expense:176 - Final cleaned results: [{'category': 'going out,house expense,groceries', 'item': 'Business Meals', 'amount': 0.0}]
+2025-09-20 21:05:00.393 | INFO     | __main__:speech_to_text:160 - Classification result: [{'category': 'going out,house expense,groceries', 'item': 'Business Meals', 'amount': 0.0}]
