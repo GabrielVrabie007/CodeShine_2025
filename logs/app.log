@@ -1,0 +1,367 @@
+2025-09-20 17:24:47.334 | INFO     | __main__:<module>:10 - GEMINI_API_KEY found: True
+2025-09-20 17:24:47.336 | INFO     | __main__:<module>:11 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 17:24:47.337 | INFO     | __main__:<module>:147 - Starting Flask server on port 5000
+2025-09-20 17:29:28.391 | INFO     | __main__:<module>:10 - GEMINI_API_KEY found: True
+2025-09-20 17:29:28.391 | INFO     | __main__:<module>:11 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 17:29:28.391 | INFO     | __main__:<module>:147 - Starting Flask server on port 5000
+2025-09-20 17:31:40.389 | INFO     | __main__:<module>:10 - GEMINI_API_KEY found: True
+2025-09-20 17:31:40.389 | INFO     | __main__:<module>:11 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 17:31:40.403 | INFO     | __main__:<module>:158 - Starting Flask server on port 5000
+2025-09-20 17:31:47.669 | INFO     | __main__:<module>:10 - GEMINI_API_KEY found: True
+2025-09-20 17:31:47.669 | INFO     | __main__:<module>:11 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 17:31:47.669 | INFO     | __main__:<module>:149 - Starting Flask server on port 5000
+2025-09-20 17:31:50.774 | INFO     | __main__:<module>:10 - GEMINI_API_KEY found: True
+2025-09-20 17:31:50.775 | INFO     | __main__:<module>:11 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 17:31:50.776 | INFO     | __main__:<module>:148 - Starting Flask server on port 5000
+2025-09-20 17:31:54.827 | INFO     | __main__:<module>:13 - GEMINI_API_KEY found: True
+2025-09-20 17:31:54.827 | INFO     | __main__:<module>:14 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 17:31:54.827 | INFO     | __main__:<module>:151 - Starting Flask server on port 5000
+2025-09-20 17:32:15.668 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: False
+2025-09-20 17:32:15.668 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: None
+2025-09-20 17:32:15.668 | INFO     | __main__:<module>:161 - Starting Flask server on port 5000
+2025-09-20 17:32:16.425 | INFO     | __main__:<module>:21 - GEMINI_API_KEY found: True
+2025-09-20 17:32:16.426 | INFO     | __main__:<module>:22 - LLM_MODEL_NAME: models/gemini-2.5-flash-preview-05-20
+2025-09-20 17:32:16.427 | INFO     | __main__:<module>:161 - Starting Flask server on port 5000
+2025-09-20 17:32:51.145 | DEBUG    | __main__:classify:104 - Incoming request data: {'text': 'Way brat azi am cheltuit 500 di lei pi ciupaciupsuri', 'categories': ['going out', 'house expense', 'groceries']}
+2025-09-20 17:32:51.145 | DEBUG    | __main__:translate_text:53 - Initializing translation model...
+2025-09-20 17:32:51.764 | ERROR    | __main__:translate_text:59 - Error in translate_text
+Traceback (most recent call last):
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000184F82CA560>
+    └ <Thread(Thread-10 (process_request_thread), started daemon 16088)>
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x00000184F82CA290>
+    └ <Thread(Thread-10 (process_request_thread), started daemon 16088)>
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-10 (process_request_thread), started daemon 16088)>
+    │    │        │    └ (<socket.socket fd=1152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5000), raddr...
+    │    │        └ <Thread(Thread-10 (process_request_thread), started daemon 16088)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>>
+    └ <Thread(Thread-10 (process_request_thread), started daemon 16088)>
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 61693)
+    │    │              └ <socket.socket fd=1152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x00000184FC402830>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>
+    │    │                   │        └ ('127.0.0.1', 61693)
+    │    │                   └ <socket.socket fd=1152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5000), raddr=...
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x00000184FC4EDCF0>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x00000184FC9780D0>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\werkzeug\serving.py", line 398, in handle
+    super().handle()
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\http\server.py", line 432, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x00000184FC428550>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x00000184FC9780D0>
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\http\server.py", line 420, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x00000184FC9780D0>>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <werkzeug.debug.DebuggedApplication object at 0x00000184FC875750>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x00000184FC9780D0>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x00000184FC9401F0>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\werkzeug\serving.py", line 333, in execute
+    for data in application_iter:
+                └ <generator object DebuggedApplication.debug_application at 0x00000184FC8AF6F0>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\werkzeug\debug\__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+               │    │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x00000184FC940940>
+               │    │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1152>, 'wsgi.errors': <_io.TextIOW...
+               │    └ <Flask 'generate_structured_output'>
+               └ <werkzeug.debug.DebuggedApplication object at 0x00000184FC875750>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x00000184FC940940>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1152>, 'wsgi.errors': <_io.TextIOW...
+           │    └ <function Flask.wsgi_app at 0x00000184FC7E7A30>
+           └ <Flask 'generate_structured_output'>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x00000184FC7E7250>
+               └ <Flask 'generate_structured_output'>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x00000184FC7E71C0>
+         └ <Flask 'generate_structured_output'>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'classify'
+           │    │           │    │              └ <Rule '/classify-expense' (POST, OPTIONS) -> classify>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x00000184FC87D240>, 'swagger_ui.static': <bound method Blueprint.se...
+           │    │           └ <Flask 'generate_structured_output'>
+           │    └ <function Flask.ensure_sync at 0x00000184FC7E7400>
+           └ <Flask 'generate_structured_output'>
+
+  File "c:\Working Folder Gabriel\CodeShine\generate_structured_output.py", line 114, in classify
+    translation = translate_text(text, categories)
+                  │              │     └ ['going out', 'house expense', 'groceries']
+                  │              └ 'Way brat azi am cheltuit 500 di lei pi ciupaciupsuri'
+                  └ <function translate_text at 0x00000184FC87D2D0>
+
+> File "c:\Working Folder Gabriel\CodeShine\generate_structured_output.py", line 55, in translate_text
+    response = model.generate_content(prompt)
+               │     │                └ '\n    You are a helpful assistant that translates, clarifies, and categorizes user input for expense tracking.\n    The inpu...
+               │     └ <function GenerativeModel.generate_content at 0x00000184FC355F30>
+               └ genai.GenerativeModel(
+                     model_name='models/gemini-2.5-flash-preview-05-20',
+                     generation_config={},
+                     safety_settings=...
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               │    │       └ <function GenerativeServiceClient.generate_content at 0x00000184FBACDCF0>
+               │    └ <google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x00000184FC97B730>
+               └ genai.GenerativeModel(
+                     model_name='models/gemini-2.5-flash-preview-05-20',
+                     generation_config={},
+                     safety_settings=...
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               └ <google.api_core.gapic_v1.method._GapicCallable object at 0x00000184FC95B670>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           │             │       └ {'metadata': [('x-goog-request-params', 'model=models/gemini-2.5-flash-preview-05-20'), ('x-goog-api-client', 'genai-py/0.8.5...
+           │             └ (model: "models/gemini-2.5-flash-preview-05-20"
+           │               contents {
+           │                 parts {
+           │                   text: "\n    You are a helpful assistant that transl...
+           └ <function _wrap_unary_errors.<locals>.error_remapped_callable at 0x00000184FC9FE4D0>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           └ <function retry_target at 0x00000184FAB15480>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 └ <function _retry_error_helper at 0x00000184FAB14D30>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+          │              └ None
+          └ FailedPrecondition('User location is not supported for the API use.')
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             └ functools.partial(<function _wrap_unary_errors.<locals>.error_remapped_callable at 0x00000184FC9FE440>, model: "models/gemini...
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           │     │       └ {'metadata': [('x-goog-request-params', 'model=models/gemini-2.5-flash-preview-05-20'), ('x-goog-api-client', 'genai-py/0.8.5...
+           │     └ (model: "models/gemini-2.5-flash-preview-05-20"
+           │       contents {
+           │         parts {
+           │           text: "\n    You are a helpful assistant that transl...
+           └ <function _wrap_unary_errors.<locals>.error_remapped_callable at 0x00000184FC9FD900>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+          │          └ <function from_grpc_error at 0x00000184FA7711B0>
+          └ <module 'google.api_core.exceptions' from 'C:\\Working Folder Gabriel\\CodeShine\\.venv\\lib\\site-packages\\google\\api_core...
+
+google.api_core.exceptions.FailedPrecondition: 400 User location is not supported for the API use.
+2025-09-20 17:32:52.046 | ERROR    | __main__:classify:116 - Translation failed: 400 User location is not supported for the API use.
+2025-09-20 17:34:18.163 | DEBUG    | __main__:home:136 - Health check called
+2025-09-20 17:34:26.059 | DEBUG    | __main__:classify:104 - Incoming request data: {'text': 'Way brat azi am cheltuit 500 di lei pi ciupaciupsuri', 'categories': ['going out', 'house expense', 'groceries']}
+2025-09-20 17:34:26.060 | DEBUG    | __main__:translate_text:53 - Initializing translation model...
+2025-09-20 17:34:26.191 | ERROR    | __main__:translate_text:59 - Error in translate_text
+Traceback (most recent call last):
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000184F82CA560>
+    └ <Thread(Thread-14 (process_request_thread), started daemon 5880)>
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x00000184F82CA290>
+    └ <Thread(Thread-14 (process_request_thread), started daemon 5880)>
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-14 (process_request_thread), started daemon 5880)>
+    │    │        │    └ (<socket.socket fd=1340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5000), raddr...
+    │    │        └ <Thread(Thread-14 (process_request_thread), started daemon 5880)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>>
+    └ <Thread(Thread-14 (process_request_thread), started daemon 5880)>
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 57688)
+    │    │              └ <socket.socket fd=1340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x00000184FC402830>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>
+    │    │                   │        └ ('127.0.0.1', 57688)
+    │    │                   └ <socket.socket fd=1340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5000), raddr=...
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x00000184FC4EDCF0>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x00000184FC978430>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\werkzeug\serving.py", line 398, in handle
+    super().handle()
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\http\server.py", line 432, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x00000184FC428550>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x00000184FC978430>
+
+  File "C:\Users\GabrielVrabie\AppData\Local\Programs\Python\Python310\lib\http\server.py", line 420, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x00000184FC978430>>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <werkzeug.debug.DebuggedApplication object at 0x00000184FC875750>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000184FC8F1090>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x00000184FC978430>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x00000184FDBBB520>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\werkzeug\serving.py", line 333, in execute
+    for data in application_iter:
+                └ <generator object DebuggedApplication.debug_application at 0x00000184FC8AF6F0>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\werkzeug\debug\__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+               │    │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x00000184FDBBAF80>
+               │    │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1340>, 'wsgi.errors': <_io.TextIOW...
+               │    └ <Flask 'generate_structured_output'>
+               └ <werkzeug.debug.DebuggedApplication object at 0x00000184FC875750>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x00000184FDBBAF80>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1340>, 'wsgi.errors': <_io.TextIOW...
+           │    └ <function Flask.wsgi_app at 0x00000184FC7E7A30>
+           └ <Flask 'generate_structured_output'>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x00000184FC7E7250>
+               └ <Flask 'generate_structured_output'>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x00000184FC7E71C0>
+         └ <Flask 'generate_structured_output'>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'classify'
+           │    │           │    │              └ <Rule '/classify-expense' (POST, OPTIONS) -> classify>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x00000184FC87D240>, 'swagger_ui.static': <bound method Blueprint.se...
+           │    │           └ <Flask 'generate_structured_output'>
+           │    └ <function Flask.ensure_sync at 0x00000184FC7E7400>
+           └ <Flask 'generate_structured_output'>
+
+  File "c:\Working Folder Gabriel\CodeShine\generate_structured_output.py", line 114, in classify
+    translation = translate_text(text, categories)
+                  │              │     └ ['going out', 'house expense', 'groceries']
+                  │              └ 'Way brat azi am cheltuit 500 di lei pi ciupaciupsuri'
+                  └ <function translate_text at 0x00000184FC87D2D0>
+
+> File "c:\Working Folder Gabriel\CodeShine\generate_structured_output.py", line 55, in translate_text
+    response = model.generate_content(prompt)
+               │     │                └ '\n    You are a helpful assistant that translates, clarifies, and categorizes user input for expense tracking.\n    The inpu...
+               │     └ <function GenerativeModel.generate_content at 0x00000184FC355F30>
+               └ genai.GenerativeModel(
+                     model_name='models/gemini-2.5-flash-preview-05-20',
+                     generation_config={},
+                     safety_settings=...
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               │    │       └ <function GenerativeServiceClient.generate_content at 0x00000184FBACDCF0>
+               │    └ <google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x00000184FC97B730>
+               └ genai.GenerativeModel(
+                     model_name='models/gemini-2.5-flash-preview-05-20',
+                     generation_config={},
+                     safety_settings=...
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               └ <google.api_core.gapic_v1.method._GapicCallable object at 0x00000184FC95B670>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           │             │       └ {'metadata': [('x-goog-request-params', 'model=models/gemini-2.5-flash-preview-05-20'), ('x-goog-api-client', 'genai-py/0.8.5...
+           │             └ (model: "models/gemini-2.5-flash-preview-05-20"
+           │               contents {
+           │                 parts {
+           │                   text: "\n    You are a helpful assistant that transl...
+           └ <function _wrap_unary_errors.<locals>.error_remapped_callable at 0x00000184FDBBB6D0>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           └ <function retry_target at 0x00000184FAB15480>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 └ <function _retry_error_helper at 0x00000184FAB14D30>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+          │              └ None
+          └ FailedPrecondition('User location is not supported for the API use.')
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             └ functools.partial(<function _wrap_unary_errors.<locals>.error_remapped_callable at 0x00000184FDBBB640>, model: "models/gemini...
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           │     │       └ {'metadata': [('x-goog-request-params', 'model=models/gemini-2.5-flash-preview-05-20'), ('x-goog-api-client', 'genai-py/0.8.5...
+           │     └ (model: "models/gemini-2.5-flash-preview-05-20"
+           │       contents {
+           │         parts {
+           │           text: "\n    You are a helpful assistant that transl...
+           └ <function _wrap_unary_errors.<locals>.error_remapped_callable at 0x00000184FC9FD900>
+
+  File "C:\Working Folder Gabriel\CodeShine\.venv\lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+          │          └ <function from_grpc_error at 0x00000184FA7711B0>
+          └ <module 'google.api_core.exceptions' from 'C:\\Working Folder Gabriel\\CodeShine\\.venv\\lib\\site-packages\\google\\api_core...
+
+google.api_core.exceptions.FailedPrecondition: 400 User location is not supported for the API use.
+2025-09-20 17:34:26.204 | ERROR    | __main__:classify:116 - Translation failed: 400 User location is not supported for the API use.

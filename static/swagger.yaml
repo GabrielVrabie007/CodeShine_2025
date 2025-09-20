@@ -1,0 +1,71 @@
+openapi: 3.0.0
+info:
+  title: Expense Classifier API
+  description: API for translating and classifying expenses using Google Generative AI.
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:5000
+
+paths:
+  /:
+    get:
+      summary: Health check
+      description: Returns the running status of the API.
+      responses:
+        '200':
+          description: API status
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: running
+
+  /classify-expense:
+    post:
+      summary: Translate and classify an expense
+      description: >
+        Translates the input text between English and Romanian, clarifies the meaning,
+        and classifies it into one of the provided categories.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                text:
+                  type: string
+                  example: "Way brat azi am cheltuit 500 di lei pi ciupaciupsuri"
+                categories:
+                  type: array
+                  items:
+                    type: string
+                  example: ["going out", "house expense", "groceries"]
+      responses:
+        '200':
+          description: Successful classification
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  original_text:
+                    type: string
+                    example: "Way brat azi am cheltuit 500 di lei pi ciupaciupsuri"
+                  translated_text:
+                    type: string
+                    example: "Today I spent 500 lei on lollipops"
+                  predicted_category:
+                    type: string
+                    example: groceries
+                  status:
+                    type: string
+                    example: success
+        '400':
+          description: Bad request (missing text or categories)
+        '500':
+          description: Internal server error (translation or classification failed)

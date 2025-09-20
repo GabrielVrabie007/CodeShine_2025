@@ -4,7 +4,6 @@ import wave
 import os
 from datetime import datetime
 import threading
-import time
 
 # Global variables for recording control
 recording = False
